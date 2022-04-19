@@ -1,0 +1,184 @@
+.about {
+    background-color: $mirage--blue;
+    background-image: url(../img/about-bg.png);
+    background-repeat: no-repeat;
+    background-position: top left calc(-80px);
+    margin-top: 75px;
+    &__content{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        max-width: 445px;
+    }
+    &__title{
+        font-family:'DM Serif Display';
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 56px;
+        letter-spacing: -0.3692307770252228px;
+       color: $white--link;
+    }
+    &__text{
+        font-family: 'Public Sans';
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 28px;
+        color: $white--link;
+        margin-top: 24px;
+    }
+
+    &__brends{
+        max-width: 536px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item{
+        margin: 0;
+        margin-top: 54px;
+    }
+    &__link {
+        width: 132px;
+        display: inline-block;
+        font-family:'Public Sans';
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: -0.11538461595773697px;
+        border: 1px solid $white--link;
+        border-radius: 24px;
+        color: $white--link;
+        padding: 14px 32px 16px 32px;
+        margin-top: 32px;
+        transition: 0.5s ease;
+        &:hover{
+            background-color: $white--link;
+            color:$mirage--blue ;
+        }
+        &:active{
+            background-color: $white--link;
+            opacity: 0.5;
+            color:$mirage--blue ;
+        }
+    }
+}  
+
+// media
+
+@media only screen and (max-width:940px) {
+    .about{
+        &__list{
+            max-width: 400px;
+        }
+        &__brends{
+            max-width: 350px;
+        }
+        &__item{
+            margin-top: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width:840px) {
+    .about{
+        &__list{
+            max-width: 300px;
+        }
+        &__item{
+            margin-top: 30px;
+        }
+        &__title{
+            font-size: 36px;
+            line-height: 44px;
+          
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .about{
+        background-image: url(../img/about-bg-top.png);
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: contain;
+        width: 100%;
+        &__content{
+            padding-top: 65px;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        &__list{
+            max-width: 456px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        &__brends{
+            max-width: 536px;
+        }
+        &__item{
+            margin-top: 40px;
+        }
+        &__link{
+            margin-right: auto;
+           margin-left:  auto;
+        }
+    }
+}
+
+@media only screen and (max-width:490px) {
+    .about{
+        &__content{
+            padding-top: 50px;
+           
+        }
+        &__list{
+            max-width: 350px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        &__brends{
+            max-width: 350px;
+        }
+        &__item{
+            margin-top: 40px;
+        }
+       
+    }
+}
+@media only screen and (max-width:375px) {
+    .about{
+        &__content{
+            padding-top: 10px;
+           
+        }
+        &__list{
+            max-width: 327px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        &__title{
+            font-size: 32px;
+            line-height: 36px;
+            letter-spacing: 0.25px;
+        }
+        &__text{
+            margin-top: 16px;
+        }
+        &__brends{
+            max-width: 327px;
+        }
+        &__item{
+            margin-top: 40px;
+        }
+        &__link{
+            margin-top: 60px;
+        }
+    }
+}

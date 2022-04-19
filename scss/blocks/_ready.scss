@@ -1,0 +1,28 @@
+.ready{
+    &__container{
+       margin-top: 100px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    &__title{
+        font-family: 'DM Serif Display';
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 56px;
+        letter-spacing: -0.3692307770252228px;
+        text-align: left;
+        color: $san--blue;
+    }
+}
+
+@media only screen and (max-width:830px){
+    .ready{
+        &__container{
+          display: flex;
+          align-items: center;
+            flex-direction: column;
+        }
+    }
+    
+}

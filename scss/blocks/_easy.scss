@@ -1,0 +1,111 @@
+.easy {
+    &__container{
+        display: flex;
+        align-items: center;
+        margin-top: 150px;
+    }
+    &__img{
+        margin-right: 125px;
+        width: 445px;
+        height: 284px;
+        border-radius: 10px;
+    }
+    &__list{
+        width: 445px;
+    }
+    &__title{
+        font-family: 'DM Serif Display';
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 56px;
+        letter-spacing: -0.3692307770252228px;
+        color: $san--blue;
+    }
+    &__text{
+        font-family: 'Public Sans';
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 28px;
+        color: $light--san-blue;
+        margin-top: 24px;
+    }
+}
+
+@media only screen and (max-width:840px){
+    .easy{
+        &__img{
+            width: 391px;
+            height: 250px;
+            margin-right: 40px;
+        }
+    }
+}
+@media only screen and (max-width:768px){
+    .easy{
+        &__container{
+            flex-direction: column;
+            margin-top: 100px;
+           
+        }
+        &__img{
+            width: 391px;
+            height: 250px;
+            margin-right: 0;
+        }
+        &__list{
+            width: 573px;
+        }
+        &__title{
+           margin-top: 48px;
+           text-align: center;
+        }
+        &__text{
+            text-align: center;
+            margin-top: 48px;
+        }
+    }
+}
+@media only screen and (max-width:620px){
+    .easy{
+        &__list{
+            width: 450px;
+        }
+        &__title{
+           margin-top: 48px;
+           text-align: center;
+        }
+        &__text{
+            text-align: center;
+            margin-top: 48px;
+        }
+    }
+}
+@media only screen and (max-width:490px){
+    .easy{
+       
+        &__img{
+            width: 328px;
+            height: 209px;
+            margin-right: 0;
+        }
+        &__list{
+            width: 328px;
+        }
+        &__title{
+           margin-top: 48px;
+           text-align: center;
+        }
+        &__text{
+            text-align: center;
+            margin-top: 24px;
+        }
+    }
+}
+@media only screen and (max-width:375px){
+    .easy{
+        &__title{
+            font-size: 36px;
+            line-height: 36px;
+        }
+    }
+}
